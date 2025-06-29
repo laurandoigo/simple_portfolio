@@ -17,7 +17,7 @@ st.title("👩🏾‍💻 Laura Ndoigo")
 # --- About Me ---
 st.header("About Me")
 st.write("""
-Hi there! I’m a Health Informatics trainee with a background in medical device engineering.I specialize in bridging clinical innovation and digital health, ensuring that emerging health technologies are safe, effective, and aligned with real-world patient care needs.
+Hi there! I am a Health Informatics trainee with a background in medical device engineering.I specialize in bridging clinical innovation and digital health, ensuring that emerging health technologies are safe, effective, and aligned with real-world patient care needs.
 """)
 
 # --- Contact Section ---
