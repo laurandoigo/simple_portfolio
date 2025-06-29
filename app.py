@@ -1,50 +1,27 @@
 import streamlit as st
 from PIL import Image
 
-# Page config
-st.set_page_config(page_title="Simple Portfolio", page_icon="👩‍💻")
+# --- Page Configuration ---
+st.set_page_config(page_title="Laura Ndoigo | Portfolio", page_icon="👩‍💻")
 
-# Load your profile image
-# Replace 'profile.jpg' with your image file path or URL
-image = Image.open("profile.jpg")
+# --- Load and Display Profile Image ---
+try:
+    image = Image.open("profile.jpg")  # Make sure profile.jpg is in the same folder
+    st.image(image, width=200)
+except Exception as e:
+    st.warning("⚠️ Could not load profile image. Make sure 'profile.jpg' exists.")
 
-# Display the image
-st.image(image, width=200)  # Adjust width as needed
+# --- Portfolio Header ---
+st.title("👩🏾‍💻 Laura Ndoigo")
 
-# Title
-st.title("👩‍💻 Your Name")
-
-# About Me
+# --- About Me ---
 st.header("About Me")
 st.write("""
-Write a short introduction about yourself here.  
-You can include your background, interests, and what you do.
+Hi there! I’m a Health Informatics trainee with a background in medical device engineering.I specialize in bridging clinical innovation and digital health, ensuring that emerging health technologies are safe, effective, and aligned with real-world patient care needs.
 """)
 
-# Skills
-st.header("Skills")
-st.write("""
-- Skill 1  
-- Skill 2  
-- Skill 3  
-- Skill 4  
-""")
-
-# Projects
-st.header("Projects")
-
-st.markdown("""
-### Project One
-A short description of project one.  
-[GitHub Repo](https://github.com/yourgithub/project-one)
-
-### Project Two
-A short description of project two.  
-[GitHub Repo](https://github.com/yourgithub/project-two)
-""")
-
-# Contact
+# --- Contact Section ---
 st.header("Contact")
-st.markdown("[LinkedIn](https://www.linkedin.com/in/yourlinkedin)")
-st.markdown("[GitHub](https://github.com/yourgithub)")
-st.markdown("[Email](mailto:youremail@example.com)")
+st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/laura-ndoigo-383362132/)")
+st.markdown("[🐙 GitHub](https://github.com/laurandoigo)")  # Replace with your GitHub username
+st.markdown("[✉️ Email](mailto:bekyibeilaurandoigo@gmail.com)")   # Replace with your email
